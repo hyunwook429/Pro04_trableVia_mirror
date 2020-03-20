@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+    <script src="https://kit.fontawesome.com/a580846db5.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Sunflower:300&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!-- jquery CDN -->
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="popup.css">
+    <title>Jum's traveling</title>
+  </head>
+  <body>
+
+<!------------------------------- header --------------------------->
+    <header>
+      <div class="로그인창">
+        <ul class="로그인">
+          <li><a href="#">로그인</a></li>
+          <li><a href="#">회원가입</a></li>
+          <li><a href="#">마이페이지</a></li>
+          <li><a href="#"><img src="./images/logoimg-02.jpg" alt="점" style="width:70px;height:40px;vertical-align: middle;"></a></li>
+        </ul>
+      </div>
+      <div class="페이지이동">
+        <ul>
+          <li><a href="jum's traveling.html"><span style="border-bottom:2px solid #000; padding-bottom:5px;">처음으로</span></a></li>
+          <li class="dropdown"><a href="#"><span>jum's 트레블</span></a>
+            <ul class="dropdown-content">
+              <li><a href="#"><span>Jum's트레블 소개</span></a></li>
+              <li><a href="#"><span>스텝 소개</span></a></li>
+              <li><a href="#"><span>프라하 지사</span></a></li>
+              <li><a href="#"><span>jum's트레블의 약속</span></a></li>
+              <li><a href="#"><span>jum's트레블 카페</span></a></li>
+              <li><a href="#"><span>유튜브 '점트레블'</span></a></li>
+              <li><a href="#"><span>오시는길</span></a></li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="#"><span>여행일정</span></a>
+            <ul class="dropdown-content" style="width:180px;">
+              <li><a href="#"><span>2030 단체배낭 VIA.P</span></a></li>
+              <li><a href="#"><span>모두의 VIA.P</span></a></li>
+              <li><a href="#"><span>일생에 한 번 아이슬란드</span></a></li>
+              <li><a href="#"><span>들썩들썩 청춘 스페인</span></a></li>
+            </ul>
+          </li>
+          <li><a href="#"><span>단독 밴투어</span></a></li>
+          <li><a href="#"><span>잔여석 확인</span></a></li>
+          <li><a href="#"><span>실시간 VIA.P 이야기</span></a></li>
+          <li class="dropdown"><a href="#"><span>공지 / 문의</span></a>
+            <ul class="dropdown-content">
+              <li><a href="#"><span>공지사항</span></a></li>
+              <li><a href="#"><span>입금확인</span></a></li>
+              <li><a href="#"><span>이벤트</span></a></li>
+              <li><a href="#"><span>질문하기</span></a></li>
+              <li><a href="#"><span>자주묻는 질문</span></a></li>
+            </ul>
+          </li>
+          <li><a href="#"><span>여행후기</span></a></li>
+          <li class="dropdown"><a href="#"><span>출발팀 게시판</span></a>
+            <ul class="dropdown-content">
+              <li><a href="#"><span>13기</span></a></li>
+              <li><a href="#"><span>14기</span></a></li>
+              <li><a href="#"><span>15기</span></a></li>
+              <li><a href="#"><span>16기</span></a></li>
+              <li><a href="#"><span>17기</span></a></li>
+              <li><a href="#"><span>18기</span></a></li>
+            </ul>
+          </li>
+          <!-- <li><a href="#"><i class="fas fa-ellipsis-h"></i></a></li> -->
+        </ul>
+      </div>
+
+      <section class="popup_section">
+        <div class="popup">
+          <div class="popup_top">
+            <a href="#"><img src="./images/popupimg-01.jpg" alt="팝업이미지" style="width:520px;height:100%;"></a>
+            <a href="#" class="popup_close" onclick="popupclose()"><i class="fas fa-times"></i></a>
+          </div>
+          <div class="popup_bottom">
+            <a href="#"><span>1일 동안 보지 않음</span></a>
+            <a href="#" onclick="popupclose()"><span>닫기</span></a>
+          </div>
+        </div>
+      </section>
+    </header>
+
+<!------------------------------- main --------------------------->
+    <main>
+      <section class="section_slide">
+        <div class="slide">
+          <ul class="panel">
+            <li><span class="img_title img_title1">YOUNG ONLY LIVE ONCE<br>2030느낌충만, <span class="bold">단체배낭</span><br><a class="shortcuts" href="#" style="background-color:rgba(60, 181, 159, 0.6)">바로가기</a></span></li>
+            <li><span class="img_title img_title2">2020년 HEOLLO SPRING<br><span class="bold">단체배낭 </span> 봄 일정 준비중<a class="shortcuts" href="#" style="background-color:rgba(59, 186, 53, 0.6)">바로가기</a></span></li>
+            <li><span class="img_title img_title3">너의 친구에게 소개하고 싶은 여행<br>세계를 경유하다, <span class="bold">Jum's트레블</span><a class="shortcuts" href="#" style="background-color:rgba(94, 4, 121,.6)">바로가기</a></li>
+          </ul>
+          <ul class="dot">
+            <li class="on">슬라이드 버튼1번</li>
+            <li>슬라이드 버튼1번</li>
+            <li>슬라이드 버튼2번</li>
+          </ul>
+          <div class="prev"><i class="fas fa-angle-left"></i></div>
+          <div class="next"><i class="fas fa-angle-right"></i></div>
+        </div>
+      </section>
+
+      <section class="section_message">
+        <div class="message_wrap">
+            <span class="message">우리의 인생 자체가 <span class="text_emphasis">TRAVLE:여행</span> 이고,<br>세계는 그냥 <span class="text_emphasis">VIA:경유지</span>일 뿐이다.</span>
+        </div>
+      </section>
+
+      <section class="section_진행중인일정">
+        <div class="current_schedule">
+          <ul>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section_slider">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="#"><img src="./images/slide_img01.jpg"></div></a>
+            <div class="swiper-slide"><a href="#"><img src="./images/slide_img02.jpg"></div></a>
+            <div class="swiper-slide"><a href="#"><img src="./images/slide_img03.jpg"></div></a>
+            <div class="swiper-slide"><a href="#"><img src="./images/slide_img04.jpg"></div></a>
+            <div class="swiper-slide"><a href="#"><img src="./images/slide_img05.jpg"></div></a>
+            <div class="swiper-slide"><a href="#"><img src="./images/slide_img06.jpg"></div></a>
+            <div class="swiper-slide"><a href="#"><img src="./images/slide_img07.jpg"></div></a>
+            <div class="swiper-slide"><a href="#"><img src="./images/slide_img08.jpg"></div></a>
+            <div class="swiper-slide"><a href="#"><img src="./images/slide_img09.jpg"></div></a>
+            <div class="swiper-slide"><a href="#"><img src="./images/slide_img10.jpg"></div></a>
+            <div class="swiper-slide"><a href="#"><img src="./images/slide_img11.jpg"></div></a>
+            <div class="swiper-slide"><a href="#"><img src="./images/slide_img12.jpg"></div></a>
+          </div>
+          <!-- 네비게이션 -->
+          <div class="swiper-button-next"><i class="fas fa-angle-right"></i></div><!-- 다음 버튼 (오른쪽에 있는 버튼) -->
+          <div class="swiper-button-prev"><i class="fas fa-angle-left"></i></div><!-- 이전 버튼 -->
+          <!-- 페이징 -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <section class="section_내가만드는유럽여행">
+        <div class="mytripEU">
+          <ul>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+      </section>
+      <section id="OMG_warp">
+        <div id="OMG_center">
+          <article id="myEU">
+            <ul>
+              <li><a href="#">
+                <figure>
+                  <img src="./images/bgOmg-01.jpg" alt="zz">
+                  <figcaption>내가 원하는 일정</figcaption>
+                </figure>
+              </a></li><li><a href="#">
+                <figure>
+                  <img src="./images/bgOmg-02.jpg" alt="zz">
+                  <figcaption>내가 원하는 숙소</figcaption>
+                </figure>
+              </a></li><li><a href="#">
+                <figure>
+                  <img src="./images/bgOmg-03.jpg" alt="zz">
+                  <figcaption>내가 원하는 레스토랑</figcaption>
+                </figure>
+              </a></li>
+            </ul>
+            <span>#새벽같은 출발시간 #억지로하는 쇼핑 #사진만 찍고 가는 여행 #시내랑 떨어진 숙소 #맛없는 음식 No!! OMG 투어의 모든 일정은 오직 한 팀만을 위한 일정으로, 여유있는 유럽여행을 할 수 있는 상품 입니다.</span>
+          </article>
+          <article id="onlymygroup">
+            <h3>only my group</h3>
+            <p>"가이드님! 우리 커피 한 잔만 금방 하고 가면 안될까요?"<br>"네, 그러세요! 대신 다른걸 안보면 됩니다." <br> "Oh My God! 그럼 그냥 이동할게요."</p>
+            <p>어느 곳을 얼마나 가느냐보다<br>누구와 어떤 것을 보느냐가 가장 중요합니다.<br>내가 원하는 사람들과 우리끼리<br>여행에 가치를 더해줄 좋은 가이드와 함께 떠나세요.</p>
+            <a href="#">상세보기</a>
+          </article>
+        </div>
+      </section>
+      <section id="section_notice">
+        <div id="notice">
+          <ul>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+        <article id="other_notice">
+            <ul>
+              <h3>공지사항</h3>
+              <li><a href="#"><p class="content">[앙코르! 다시한번 유럽 인문학 강의! 11월 16일 토요일 오...</p><span>2019-09-09</span></a><span>관리자</span> </li>
+              <li><a href="#"><p class="content">겨울 유럽단체배낭여행 설명회 OPEN</p><span>2019-09-09</span></a><span>관리자</span> </li>
+              <li><a href="#"><p class="content">기다리고기다리던 2020년 첫번째 단체배낭여행 일정...</p><span>2019-09-09</span></a><span>관리자</span> </li>
+              <li><a href="#"><p class="content">7월 20일 인문학 강의 성공적으로 잘 진행되었답니다 ^^</p><span>2019-09-09</span></a><span>관리자</span> </li>
+              <li><a href="#"><p class="content">[7월20일 인문학 강의 장소 안내]</p><span>2019-09-09</span></a><span>관리자</span> </li>
+              <li><a href="#"><p class="content">[아는.만큼.보인다EP1-유럽에서 인문학을 만나다!...]</p><span>2019-09-09</span></a><span>관리자</span> </li>
+            </ul>
+            <ul>
+              <h3>단체배낭 솔직후기</h3>
+              <li><a href="#"><p class="content">[15기] 45일간의 여행 그중 22일단의 이야기 [출처: 트래...</p><span>2019-09-09</span></a><span>관리자</span> </li>
+              <li><a href="#"><p class="content">[14기] 다시 쓰는 진정 후기-1[출처:트래블비아 카페 10...]</p><span>2019-09-09</span></a><span>관리자</span> </li>
+              <li><a href="#"><p class="content">[13기] 13기 두번째 후기!!![출처:트래블비아 카페 100...]</p><span>2019-09-09</span></a><span>관리자</span> </li>
+              <li><a href="#"><p class="content">[14기] 14기 두번째 후기</p><span>2019-09-09</span></a><span>관리자</span> </li>
+              <li><a href="#"><p class="content">[14기] 14기 리얼 첫 후기[출처:트래블비아 카페 100%...]</p><span>2019-09-09</span></a><span>관리자</span> </li>
+              <li><a href="#"><p class="content">[13기] 13기 첫 여행후기!![출처:트래블비아 카페 100%...]</p><span>2019-09-09</span></a><span>관리자</span> </li>
+            </ul>
+            <ul>
+              <h3>자주묻는 질문</h3>
+              <li><a href="#"><p class="content">[jum's트레블] 오리엔테이션은 꼭 참여해야하나요?</p><span>2019-09-09</span></a><span>관리자</span> </li>
+              <li><a href="#"><p class="content">[jum's트레블] 캐리어 사이즈는 어떻게 준비하나요?</p><span>2019-09-09</span></a><span>관리자</span> </li>
+              <li><a href="#"><p class="content">[jum's트레블] 카드결제는 가능한가요?</p><span>2019-09-09</span></a><span>관리자</span> </li>
+              <li><a href="#"><p class="content">[jum's트레블] 현금영수증은 발급해주나요?</p><span>2019-09-09</span></a><span>관리자</span> </li>
+              <li><a href="#"><p class="content">[jum's트레블] 조편성은 어떻게 진행되나요?</p><span>2019-09-09</span></a><span>관리자</span> </li>
+              <li><a href="#"><p class="content">[jum's트레블] 예약금은 언제까지 어떻게 입금해야 하나요?</p><span>2019-09-09</span></a><span>관리자</span> </li>
+            </ul>
+          </article>
+        </section>
+    </main>
+<!------------------------------- footer --------------------------->
+    <footer id="footer">
+      <div id="footerWrap">
+        <div id="addressWrap">
+          <ul>
+            <li><a href="#">회사소개</a></li>
+            <li><a href="#">국외여행 특별약관</a></li>
+            <li><a href="#">호텔예약</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#"><span class="big">개인정보처리방침</span></a></li>
+            <li><a href="#">여행약관</a></li>
+          </ul>
+          <address><span class="big">점스트레블 </span> 경북 구미시 원남로 8길 5-4 하우스타블루 502호<br>전화 070-7576-2808 팩스 054-458-0429<br>사업자등록번호 930-429-171717  관광 사업자 등록번호:제 3718-2019-383838호
+            <br>통신판매업 신고번호: 제 2019-경북 구미시-305 호
+          </address>
+          <small>
+            <p>대표번호:010 8429 0444 메일:jums@naver.com<br>대표:이정규</p>
+          </small>
+          <small>
+            <p>Copyright &copy; 점트레블</p>
+          </small>
+        </div>
+        <div id="pagemoveWrap">
+          <a href="#" class="kakaotalk">kakaotalk</a>
+          <a href="#" class="cafe">cafe</a>
+          <a href="#" class="blog">blog</a>
+          <a href="#" class="youtube">youtube</a>
+          <a href="#" class="facebook">facebook</a>
+        </div>
+      </div>
+    </footer>
+
+
+<!------------------------------- script --------------------------->
+    <script type="text/javascript">
+
+    $(document).ready(function() {
+      //슬라이드 메소드 실행
+      slide();
+    });
+
+
+    //팝업닫기
+    function popupclose(){
+      $('.popup').css("display","none");
+    }
+
+    // 슬라이드
+    function slide() {
+    var wid = 0;
+    var now_num = 0;
+    var slide_length = 0;
+    var auto = null;
+    var $dotli = $('.dot>li');
+    var $panel = $('.panel');
+    var $panelLi = $panel.children('li');
+
+    // 변수 초기화
+    function init() {
+      wid = $('.slide').width();
+      now_num = $('.dot>li.on').index();
+      slide_length = $dotli.length;
+    }
+
+    // 이벤트 묶음
+    function slideEvent() {
+
+      // 슬라이드 하단 dot버튼 클릭했을때
+      $dotli.click(function() {
+        now_num = $(this).index();
+        slideMove();
+      });
+
+      // 이후 버튼 클릭했을때
+      $('.next').click(function() {
+        nextChkPlay();
+      });
+
+      // 이전 버튼 클릭했을때
+      $('.prev').click(function() {
+        prevChkPlay();
+      });
+
+      // 오토플레이
+      autoPlay();
+
+      // 오토플레이 멈춤
+      autoPlayStop();
+
+      // 오토플레이 재시작
+      autoPlayRestart();
+
+      // 화면크기 재설정 되었을때
+      resize();
+    }
+
+    // 자동실행 함수
+    function autoPlay() {
+      auto = setInterval(function() {
+        nextChkPlay();
+      }, 4000);
+    }
+
+    // 자동실행 멈춤
+    function autoPlayStop() {
+      $panelLi.mouseenter(function() {
+        clearInterval(auto);
+      });
+    }
+
+
+    // 자동실행 멈췄다가 재실행
+    function autoPlayRestart() {
+      $panelLi.mouseleave(function() {
+        auto = setInterval(function() {
+          nextChkPlay();
+        }, 4000);
+      });
+    }
+
+    // 이전 버튼 클릭시 조건 검사후 슬라이드 무브
+    function prevChkPlay() {
+      if (now_num == 0) {
+        now_num = slide_length - 1;
+      } else {
+        now_num--;
+      }
+      slideMove();
+    }
+
+    // 이후 버튼 클릭시 조건 검사후 슬라이드 무브
+    function nextChkPlay() {
+      if (now_num == slide_length - 1) {
+        now_num = 0;
+      } else {
+        now_num++;
+      }
+      slideMove();
+    }
+
+    // 슬라이드 무브
+    function slideMove() {
+      $panel.stop().animate({
+        'margin-left': -wid * now_num
+      });
+      $dotli.removeClass('on');
+      $dotli.eq(now_num).addClass('on');
+    }
+
+    // 화면크기 조정시 화면 재설정
+    function resize() {
+      $(window).resize(function() {
+        init();
+        $panel.css({
+          'margin-left': -wid * now_num
+        });
+      });
+    }
+    init();
+    slideEvent();
+    }
+
+
+    // 다중이미지 슬라이드
+    new Swiper('.swiper-container', {
+        	slidesPerView : 4, // 동시에 보여줄 슬라이드 갯수
+        	spaceBetween : 30, // 슬라이드간 간격
+        	slidesPerGroup : 4, // 그룹으로 묶을 수, slidesPerView 와 같은 값을 지정하는게 좋음
+
+        	// 그룹수가 맞지 않을 경우 빈칸으로 메우기
+        	// 3개가 나와야 되는데 1개만 있다면 2개는 빈칸으로 채워서 3개를 만듬
+        	loopFillGroupWithBlank : true,
+
+        	loop : true, // 무한 반복
+
+        	pagination : { // 페이징
+        		el : '.swiper-pagination',
+        		clickable : true, // 페이징을 클릭하면 해당 영역으로 이동, 필요시 지정해 줘야 기능 작동
+        	},
+        	navigation : { // 네비게이션
+        		nextEl : '.swiper-button-next', // 다음 버튼 클래스명
+        		prevEl : '.swiper-button-prev', // 이번 버튼 클래스명
+        	},
+        });
+    </script>
+  </body>
+</html>

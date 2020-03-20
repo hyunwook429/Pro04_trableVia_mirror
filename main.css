@@ -1,0 +1,112 @@
+a{text-decoration: none;}
+img{vertical-align: top;border:none;}
+address{font-style: normal;}
+.text_hide{position: absolute;left: -9999px;}
+.bold{font-weight: bold;}
+
+/* secition_slide */
+.slide{width: 1250px; margin: 0 auto;position: relative;overflow: hidden; border:1px solid #ccc;}
+.panel{width: 400%;}
+.panel>li{width: 25%;height: 750px;float: left;}
+.panel>li{position: relative;}
+.panel>li:nth-child(1){background: url('./images/background-04.jpg') no-repeat 50% 100%;background-size: cover;cursor: pointer;}
+.panel>li:nth-child(2){background: url('./images/background-05.jpg') no-repeat 50% 100%;background-size: cover;cursor: pointer;}
+.panel>li:nth-child(3){background: url('./images/background-06.jpg') no-repeat 50% 100%;background-size: cover;cursor: pointer;}
+.panel::after{content: "";display: block;clear: both;}
+.img_title{position: absolute;}
+.img_title1{bottom: 150px; left: 200px;letter-spacing: 10px;font-size: 35px;background: -webkit-linear-gradient(left, #699599, #fff);-webkit-background-clip: text;color: transparent;font-family: 'Gothic A1', sans-serif;}
+.img_title1::before{content: "";display: block;clear: both;width: 400px;border:1.5px solid #ccc;}
+.img_title2{right: 100px; bottom: 200px;letter-spacing: 3px;font-size: 35px;background: -webkit-linear-gradient(right, #6ec85c, #fff);-webkit-background-clip: text;color:transparent;font-family: 'Gothic A1', sans-serif;}
+.img_title2::before{content: "COMING SOON";display: block;border-bottom: 3px solid #6ec85c; width: 400px;}
+.img_title3{right: 100px; bottom: 500px;letter-spacing: 2px; font-size: 35px;background: -webkit-linear-gradient(left, #8524e7, #9d77a8, #8524e7);-webkit-background-clip:text; color:transparent;font-family:'Gothic A1', sans-serif; }
+.panel>li:nth-child(3)::before{position: absolute;top: 150px;left: 100px;content: "";display: block;clear: both;width: 400px;border:1.5px solid #9d77a8;}
+.shortcuts{display: block;width: 90px;height: 35px;line-height: 35px;text-align: center;font-size: 15px;font-family: 'Gothic A1', sans-serif;color: #fff;letter-spacing: 2px;}
+.dot{position: absolute;right: 50%;bottom: 20px; transform: translateX(50%);}
+.dot > li {float: left;width: 10px;height: 10px;border-radius: 50%;margin: 0 10px;border:1px solid #fff;text-indent: -99999px;cursor: pointer; box-sizing: border-box;}
+.dot > li.on{background-color: #fff;}
+.prev{position: absolute;width: 30px;height: 30px;border-radius: 50%;top: 45%;left: 5%;cursor: pointer;border:1px solid #ccc;}
+.prev > i{width: 100%;text-align: center;line-height: 30px;font-size: 17px;color: #ccc;}
+.next{position: absolute;width: 30px;height: 30px;border-radius: 50%;top: 45%;right: 5%;cursor: pointer;border:1px solid #ccc;}
+.next > i{width: 100%;text-align: center;line-height: 30px;font-size: 17px;color: #ccc;}
+
+
+/* section_message */
+.message_wrap{height: 123px;text-align: center; word-spacing: 10px;}
+.message{display: block;margin: 20px 0;font-size: 20px;}
+.text_emphasis{font-size: 35px;color: rgb(124, 11, 101);}
+
+/* section_진행중인일정 */
+.current_schedule{width: 1250px; margin: 0 auto;position: relative;height: 70px;}
+.current_schedule>ul>li:nth-child(1){float: left;width: 85%;margin-top: 15px;border:2px solid #ccc;box-sizing: border-box;}
+.current_schedule>ul>li:nth-child(2){float: left;width: 15%;margin-top: 10px;border:8px solid #8439b3;box-sizing: border-box;}
+.current_schedule::before{content: "진행중인 일정";position: absolute; top:-30px;right: 0;font-size: 25px;letter-spacing: 2px;font-weight: bold;}
+
+/* section_slider */
+.swiper-container {width: 1250px; margin: 0 auto; height:369px;margin-bottom: 40px;}
+.swiper-slide {	text-align:center;	display:flex; /* 내용을 중앙정렬 하기위해 flex 사용 */	align-items:center; /* 위아래 기준 중앙정렬 */	justify-content:center; /* 좌우 기준 중앙정렬 */}
+.swiper-slide img {	box-shadow:0 0 5px #555;	max-width:100%; /* 이미지 최대너비를 제한, 슬라이드에 이미지가 여러개가 보여질때 필요 */	/* 이 예제에서 필요해서 설정했습니다. 상황에따라 다를 수 있습니다. */}
+.swiper-button-next{width: 30px; height: 30px; border:1px solid #ccc;border-radius: 50%;background-image: none;}
+.swiper-button-next i{display: block; line-height: 30px;text-align: center;font-size: 17px;font-weight: bold;color: #ccc;}
+.swiper-button-prev{width: 30px; height: 30px; border:1px solid #ccc; border-radius: 50%;background-image: none;}
+.swiper-button-prev i{display: block;line-height: 30px;text-align: center;font-size: 17px;font-weight: bold; color: #ccc;}
+.swiper-pagination-bullet{background-color: transparent;border:1px solid #000; border-radius: 50%;}
+.swiper-pagination-bullet-active{background-color: #000;}
+
+/* section_내가만드는유럽여행 */
+.mytripEU{width: 1250px; margin: 0 auto;position: relative;height: 70px;}
+.mytripEU>ul>li:nth-child(1){float: left;width: 22%;margin-top: 10px;border:8px solid #8439b3;box-sizing: border-box;}
+.mytripEU>ul>li:nth-child(2){float: left;width: 78%;margin-top: 15px;border:2px solid #ccc;box-sizing: border-box;}
+.mytripEU::before{content: "내가 만든 유럽여행 OMG";position: absolute; top:-30px;left: 0;font-size: 25px;word-spacing: 5px;font-weight: bold;}
+
+#OMG_warp{width: 100%; height: 600px;background: url(./images/background-07.jpg) no-repeat 50% 80%/cover;}
+#OMG_center{width: 1250px; margin: 0 auto;overflow: hidden;}
+#OMG_warp #myEU{width:750px;margin-top: 100px;}
+#OMG_warp #myEU ul{clear: both;}
+#OMG_warp #myEU ul li{width: 230px;height: 314px;float: left; margin: 0 10px; border-top: 2px solid #000; border-bottom: 2px solid #000;}
+#OMG_warp #myEU ul li a{display: block;padding: 20px 0;}
+#OMG_warp #myEU ul li a figure{margin-top: 20px;}
+#OMG_warp #myEU ul li a figure img{width: 230px; height: 213px; background-size: cover; margin-bottom: 10px;}
+#OMG_warp #myEU ul li a figure figcaption{text-align: center; font-size: 25px; color: #000;}
+#OMG_warp #myEU span{float: left; margin-top: 20px; clear: both;}
+#OMG_warp #onlymygroup{overflow: hidden; padding-left: 40px;}
+#OMG_warp #onlymygroup h3{font-size: 60px;text-transform: capitalize;}
+#OMG_warp #onlymygroup p{margin: 30px 0; font-size: 17px;line-height: 30px;}
+#OMG_warp #onlymygroup span{}
+#OMG_warp #onlymygroup a{display: block; width: 80px; height: 40px; line-height: 40px;text-align: center; border-radius: 40px; color: #fff; background-color: #8439b3; font-size: 13px;}
+#OMG_warp #onlymygroup a:hover{background-color: #fff; color: #000; border:1px solid #000; transition: .4s;}
+
+/* notice */
+#section_notice{width: 1250px; margin: 0 auto;position: relative;height: 70px; margin-top: 50px;}
+#notice>ul>li:nth-child(1){float: left;width: 90%;margin-top: 15px;border:2px solid #ccc;box-sizing: border-box;}
+#notice>ul>li:nth-child(2){float: left;width: 10%;margin-top: 10px;border:8px solid #8439b3;box-sizing: border-box;}
+#notice::before{content: "NOTICE";position: absolute; top:-30px;right: 0;font-size: 25px;letter-spacing: 6px;font-weight: bold;}
+
+/* other_notice */
+#other_notice{width: 1250px; margin: 0 auto;}
+#other_notice h3{padding: 20px 0;}
+#other_notice ul{width: 33%;float: left;}
+#other_notice ul li{width: 400px; height: 30px;border-bottom: 1px solid #ccc;margin-bottom: 10px;}
+#other_notice ul li .content{width: 240px;height: 18px; overflow: hidden;float: left; padding-right: 10px;}
+#other_notice a{color: #363636; font-size: 14px;}
+#other_notice span{padding-right: 10px;color: #363636; font-size: 14px;}
+
+#footer{width: 100%; background: rgb(57, 57, 57);overflow: hidden;padding-top: 20px;}
+#footerWrap{position: relative;width: 1250px;margin: 0 auto;}
+#addressWrap{width: 60%;float: left;}
+#addressWrap ul{margin-bottom: 20px;}
+#addressWrap ul li{display: inline-block;margin: 0 10px;}
+#addressWrap a{color: #ccc;}
+#addressWrap a:hover{color:#000;transition: .4s;}
+#addressWrap address{line-height: 30px; margin-bottom: 20px;color: #fff;font-size: 12px;}
+#addressWrap p{margin: 20px 0; color: #fff;}
+#addressWrap .big{font-size: 15px; font-weight: bold;}
+
+
+#pagemoveWrap{position: absolute;right: 0; top: 10px;}
+#pagemoveWrap a{float: left; width: 40px; height: 40px;background: url(./images/sns.png) no-repeat; text-indent: -9999px;margin: 0 10px;}
+#pagemoveWrap a:hover{opacity: .5;transition: .4s;}
+#pagemoveWrap .kakaotalk{background-position: left;}
+#pagemoveWrap .cafe{background-position: -45px center;}
+#pagemoveWrap .blog{background-position: -90px center;}
+#pagemoveWrap .youtube{background-position: -180px center;}
+#pagemoveWrap .facebook{background-position: -230px center;}
